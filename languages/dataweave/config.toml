@@ -1,0 +1,3 @@
+name = "Dataweave"
+grammar = "dataweave"
+path_suffixes = ["dwl"]

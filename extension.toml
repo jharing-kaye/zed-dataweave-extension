@@ -1,0 +1,11 @@
+id = "dataweave"
+name = "Dataweave"
+version = "0.1.1"
+schema_version = 1
+authors = ["Joshua Ilya Haring-Kaye <jharing-kaye@brotherhoodmutual.com>"]
+description = "Dataweave syntax highlighting"
+repository = "https://github.com/jharing-kaye/zed-dataweave-extension"
+
+[grammars.dataweave]
+repository = "https://github.com/jharing-kaye/tree-sitter-dataweave"
+commit = "1ec4f45d5f16321ae828eec8bee36a6869fb46e8"
