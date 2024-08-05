@@ -1,31 +1,20 @@
+; Literals
+(float) @number
+(int) @number
+(string) @string
+(bool) @boolean
 
-(typeExpression) @type
-(value (numberLiteral)) @number
+; DataWeave Header
+(header
+  "%dw" @keyword
+  (version) @constant
+  )
 
-(line_comment) @comment
-(block_comment) @comment
+; Object keys
+(key) @property
 
+; Null
+(null) @keyword
 
-
-(versionDirective) @property
-
-(inputDirective 
-  id: (nameIdentifier) @variable.input
-)
-(varDirective id: (nameIdentifier) @variable.var)
-(typeDirective id: (nameIdentifier) @type)
-
-(mimeType) @mime_type
-(writerId) @mime_type
-
-((selectableValues (nameIdentifier (#is-not? local)) @variable.external))
-; para sobrescribir con el de su refe, tiene que matchear con algo
-((selectableValues (nameIdentifier (#is? local)) @nothing))
- 
-[
-    "var"
-    "type"
-    "fun"
-    "do"
-    "input"
-] @keyword
+; Comments
+(comment) @comment

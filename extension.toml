@@ -7,5 +7,5 @@ description = "Dataweave syntax highlighting"
 repository = "https://github.com/jharing-kaye/zed-dataweave-extension"
 
 [grammars.dataweave]
-repository = "https://github.com/jharing-kaye/tree-sitter-dataweave"
-commit = "1ec4f45d5f16321ae828eec8bee36a6869fb46e8"
+repository = "https://github.com/jharing-kaye/tree-sitter-dataweave-2"
+commit = "f07651f2c3f4c4fa037ffaef6e56350272b29251"
